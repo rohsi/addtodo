@@ -21,7 +21,7 @@ export default new Vuex.Store({
     }
   },
 
-    del(state, payload) {
+    del(state,id) {
       state.ingredients.splice(id,1) ;
     }
 

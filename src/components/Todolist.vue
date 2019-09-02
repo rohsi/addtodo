@@ -29,8 +29,8 @@
       addIng() {
         this.$store.commit('addNewTodo', {task:this.newTodo})
       },
-      deleteIng() {
-        this.$store.commit('del')
+      deleteIng(id) {
+        this.$store.commit('del',id)
       }
     }
 
