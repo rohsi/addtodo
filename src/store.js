@@ -20,11 +20,11 @@ export default new Vuex.Store({
       state.ingredients.push({id: state.ingredients.length +1 , task: payload.task});
     }
   },
-  mutations: {
+
     del(state, payload) {
       state.ingredients.splice(id,1) ;
     }
-  }
+
 
 });
 
