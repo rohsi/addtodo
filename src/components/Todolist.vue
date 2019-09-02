@@ -2,7 +2,7 @@
     <div class="hello">
         <input type="text " v-model="newTodo">
         <button class="button" @click="addIng">ADD</button>
-        <div v-for="(ing,index) in ingredients" :key="index">
+        <div v-for="(ing,id) in ingredients" :key="id">
             <p v-on:click="deleteIng(id)">{{ing}}</p>
         </div>
     </div>
@@ -29,7 +29,7 @@
       addIng() {
         this.$store.commit('addNewTodo', {task:this.newTodo})
       },
-      deleteIng(id) {
+      deleteIng() {
         this.$store.commit('del')
       }
     }
